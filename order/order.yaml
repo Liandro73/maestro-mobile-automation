@@ -1,0 +1,14 @@
+appId: com.qazandoqafood
+---
+- runFlow: store.yaml
+- scrollUntilVisible:
+    centerElement: true
+    element:
+      text: "Suco de laranja"
+- tapOn:
+    id: add-item-buttom
+    index: 3
+- tapOn:
+    id: "open-cart-button"
+- tapOn:
+    id: "confirm-order-button"

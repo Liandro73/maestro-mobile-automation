@@ -1,0 +1,13 @@
+appId: com.qazandoqafood
+---
+- runFlow: order.yaml
+- assertVisible: "Subtotal"
+- assertVisible: "Taxa de entrega"
+- scrollUntilVisible:
+    centerElement: true
+    element:
+      text: "Cartão de crédito"
+- tapOn: "Cartão de crédito"
+- tapOn:
+    id: "do-order-button"
+- assertVisible: "Pedido realizado"

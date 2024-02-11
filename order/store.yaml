@@ -1,0 +1,9 @@
+appId: com.qazandoqafood
+---
+- runFlow: address.yaml
+- repeat:
+    while:
+        notVisible: "Bulldog Hamburgueria"
+    commands:
+        - scroll
+- tapOn: "Bulldog Hamburgueria"

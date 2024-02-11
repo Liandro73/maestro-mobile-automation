@@ -1,0 +1,5 @@
+appId: com.qazandoqafood
+---
+- runFlow: login.yaml
+- tapOn: "Selecione seu endereço..."
+- tapOn: "PERMITIR"
